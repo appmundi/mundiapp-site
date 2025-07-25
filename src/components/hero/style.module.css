@@ -1,0 +1,74 @@
+.hero {
+  background-image: url('/images/bg-home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 500px;
+  margin-right: 3rem;
+  text-align: left;
+}
+
+.content h1 {
+  color: #26b731;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.cta {
+  background-color: transparent;
+  color: #26b731;
+  border: 2px solid #26b731;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #26b731;
+  color: black;
+}
+
+.dots {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.dots .active {
+  opacity: 1;
+  background-color: #26b731;
+}
