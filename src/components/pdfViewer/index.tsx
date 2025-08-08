@@ -11,6 +11,8 @@ export function PdfViewer() {
   const { file } = useParams<{ file: string }>();
   const [numPages, setNumPages] = useState<number | null>(null);
 
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+  
   const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages);
   };
