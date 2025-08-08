@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './style.module.css';
 
-pdfjs.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js";
+import workerSrc from 'pdfjs-dist/build/pdf.worker.min?url';
+
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 export function PdfViewer() {
   const { file } = useParams<{ file: string }>();
