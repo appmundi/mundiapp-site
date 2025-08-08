@@ -20,7 +20,7 @@ export function PdfViewer() {
   return (
     <div className={styles.container}>
       <Document
-        file={`/${file}.pdf`}
+        file={`${window.location.origin}/${file}.pdf`}
         onLoadSuccess={onDocumentLoadSuccess}
         loading='Carregando documento...'
         error='Erro ao carregar o documento.'
