@@ -8,7 +8,8 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/pdf/:file' element={<PdfViewer />} />
+      <Route path='/pdf/politica-de-privacidade' element={<PdfViewer type='policies' />} />
+      <Route path='/pdf/termos-de-servico' element={<PdfViewer type='terms' />} />
     </Routes>
   );
 }

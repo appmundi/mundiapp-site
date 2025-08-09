@@ -1,26 +1,29 @@
 import { Document, Page, pdfjs } from 'react-pdf';
-import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './style.module.css';
-
 import workerSrc from 'pdfjs-dist/build/pdf.worker.min?url';
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
-export function PdfViewer() {
-  const { file } = useParams<{ file: string }>();
+export type PdfViewerProps = {
+  type: 'terms' | 'policies';
+};
+
+export function PdfViewer({ type }: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number | null>(null);
+  const policies = '/politica-de-privacidade.pdf';
+  const terms = '/termos-de-servico.pdf';
   
   const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages);
   };
 
-  if (!file) return <p>Arquivo não encontrado.</p>;
+  if (!type) return <p>Arquivo não encontrado.</p>;
 
   return (
     <div className={styles.container}>
       <Document
-        file={`${window.location.origin}/${file}.pdf`}
+        file={type === 'terms' ? terms : policies}
         onLoadSuccess={onDocumentLoadSuccess}
         loading='Carregando documento...'
         error='Erro ao carregar o documento.'
