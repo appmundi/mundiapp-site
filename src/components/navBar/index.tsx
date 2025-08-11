@@ -25,13 +25,13 @@ export function Navbar() {
             menuAberto ? styles['mobile-menu'] : ''
           }`}
         >
-          <a href='#home' onClick={() => setMenuAberto(false)}>
+          <a href='/#home' onClick={() => setMenuAberto(false)}>
             Home
           </a>
-          <a href='#service' onClick={() => setMenuAberto(false)}>
+          <a href='/#service' onClick={() => setMenuAberto(false)}>
             Serviço
           </a>
-          <a href='#banner' onClick={() => setMenuAberto(false)}>
+          <a href='/#banner' onClick={() => setMenuAberto(false)}>
             Saiba mais
           </a>
           {/*<a href='#contact' onClick={() => setMenuAberto(false)}>
