@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.mundi.mundi_client_app",
+      "sha256_cert_fingerprints": [
+        "B2:CA:F7:A7:E4:AB:85:0D:DE:95:99:9D:8A:B9:1B:0C:B9:04:E5:A7:74:53:CF:57:62:16:AE:CA:0D:C8:1B:A5"
+      ]
+    }
+  }
+]
