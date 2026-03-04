@@ -15,7 +15,7 @@ export default function EntrepreneurRedirect() {
 
   useEffect(() => {
     const id = searchParams.get('id');
-    const deepLink = id ? `br.com.mundi.mundi_client_app://entrepreneur?id=${id}` : 'br.com.mundi.mundi_client_app://';
+    const deepLink = id ? `mundi://entrepreneur?id=${id}` : 'mundi://';
 
     const onVisibilityChange = () => {
       if (document.hidden) hasHidden.current = true;
