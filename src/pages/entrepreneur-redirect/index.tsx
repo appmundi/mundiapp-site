@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 
 const ANDROID_STORE_URL =
   'https://play.google.com/store/apps/details?id=br.com.mundi.mundi_client_app&hl=pt_BR';
-// const IOS_STORE_URL = ''; // TODO: publicar na App Store
+const IOS_STORE_URL = 'https://apps.apple.com/br/app/mundi/id6473874598';
 
 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 const isAndroid = /Android/i.test(navigator.userAgent);
@@ -33,8 +33,7 @@ export default function EntrepreneurRedirect() {
       if (isAndroid) {
         window.location.href = ANDROID_STORE_URL;
       } else if (isIOS) {
-        // TODO: window.location.href = IOS_STORE_URL;
-        setStatus('Em breve disponível na App Store.');
+        window.location.href = IOS_STORE_URL;
       } else {
         window.location.href = ANDROID_STORE_URL;
       }
