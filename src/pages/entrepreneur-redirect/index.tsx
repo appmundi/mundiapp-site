@@ -10,7 +10,7 @@ const isAndroid = /Android/i.test(navigator.userAgent);
 
 export default function EntrepreneurRedirect() {
   const [searchParams] = useSearchParams();
-  const [status, setStatus] = useState('Abrindo o Mundi App…');
+  const [status, _] = useState('Abrindo o Mundi App…');
   const hasHidden = useRef(false);
 
   useEffect(() => {
