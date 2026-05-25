@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "br.com.mundi.mundi_client_app",
       "sha256_cert_fingerprints": [
-        "B2:CA:F7:A7:E4:AB:85:0D:DE:95:99:9D:8A:B9:1B:0C:B9:04:E5:A7:74:53:CF:57:62:16:AE:CA:0D:C8:1B:A5"
+        "B2:CA:F7:A7:E4:AB:85:0D:DE:95:99:9D:8A:B9:1B:0C:B9:04:E5:A7:74:53:CF:57:62:16:AE:CA:0D:C8:1B:A5",
+        "5A:A3:E8:62:55:45:59:52:DC:9F:64:77:3D:5B:09:7D:66:3C:B6:00:B7:EB:7D:F1:F4:76:79:20:3C:4A:42:B0"
       ]
     }
   }
